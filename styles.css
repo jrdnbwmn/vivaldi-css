@@ -1,0 +1,70 @@
+/* Make sure tabs have the correct font size */
+.tab {
+    font-size: 12px !important;
+}
+
+/* Make the new tab button stand out less */
+.toolbar-tabbar .newtab > button svg {
+    fill: #989EA9;
+}
+
+/* Remove border between top bar and bookmark bar */
+.address-top .mainbar > .toolbar-mainbar .toolbar-extensions:before, .address-top .mainbar > .toolbar-mainbar:before {
+    height: 0px;
+}
+
+/* Fix padding on bookmark bar now that the border between it and the top bar is gone */
+.bookmark-bar-top .bookmark-bar {
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+
+/* Make the tab scroll arrows only show up when they're needed */
+.disabled > .ToolbarButton-Button {
+    display: none;
+}
+
+/* Adjustments to omnibar */
+.SearchField, .UrlBar-AddressField {
+    border: 0;
+    background: #EDEFF1;
+    font-size: 13px !important;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Make sure bookmark bar has correct font size */
+.bookmark-bar {
+    font-size: 12px !important;
+}
+
+/* Adjustments to close button on tabs, including making cross always visible */
+.tab-position .tab .close {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+}
+.tab-position .tab .close:hover {
+    background-color: #C6CAD0;
+}
+.tab-position .tab .close svg {
+    background: transparent;
+}
+
+/* Below is me trying out adjusting padding and sizing of tabs (didn't work) */
+/*#tabs-tabbar-container {
+    height: 32px !important;
+}
+
+.pinned {
+    width:33px;
+}
+
+.tab-position:has(.pinned) {
+    width: 33px !important;
+}
+.pinned {
+    width: 33px !important;
+}
+.pinned > .tab-header {
+    width: 33px !important;
+}*/
